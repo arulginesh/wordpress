@@ -1,0 +1,122 @@
+<div class="skt-builder-block-wrapper skt-builder-home-section1-block skt-builder-home-section1-block-{{id}}" style="background-color: {{blockBackgroundColor}}; background-image: url({{blockBgImageUrl}}); padding-bottom: {{blockPaddingBottom}}px; padding-top: {{blockPaddingTop}}px; {{#if blockParallaxEffect}}background-attachment: fixed;{{/if}}">
+	{{#if blockShowWave}}
+	<style>
+		.skt-builder-home-section1-block-{{id}} .skt-builder-wave .skt-builder-wave-color{fill: {{blockBackgroundColor}};}
+	</style>
+	<div class="skt-builder-wave">
+		<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1450.000000pt" height="240.000000pt" viewBox="0 0 1450.000000 240.000000" preserveAspectRatio="xMidYMid meet">
+			<g transform="translate(0.000000,240.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+				<path class="skt-builder-wave-color" d="M13770 2394 c-19 -2 -80 -9 -135 -15 -369 -40 -805 -146 -1205 -295 -80 -29 -274 -108 -430 -175 -1099 -468 -1950 -757 -2665 -903 -388 -79 -626 -106 -976 -113 -508 -10 -694 21 -1294 212 -525 167 -780 215 -1151 215 -457 0 -920 -92 -1554 -308 -168 -57 -388 -131 -490 -163 -749 -241 -1538 -385 -2355 -430 -274 -15 -851 -6 -1050 16 -77 9 -213 19 -302 22 l-163 6 0 -232 0 -231 7250 0 7250 0 0 1189 0 1189 -32 6 c-37 8 -644 16 -698 10z"/>
+			</g>
+		</svg>
+	</div>
+    {{/if}}
+	<div class="skt-builder-block-inner skt-builder-block-inner-{{id}}" style="{{#if blockAnimation}}visibility: hidden;{{/if}}">
+		<div class="skt-builder-container">
+        	<style>
+            	.skt-builder-home-section1-block-{{id}} .skt-builder-block-button{background-color: {{blockButtonBgColor}}; color: {{blockButtonTextColor}};}
+				.skt-builder-home-section1-block-{{id}} .skt-builder-block-button:hover{background-color: {{blockButtonHoverBgColor}}; color: {{blockButtonHoverTextColor}};}
+            </style>
+			<div class="skt-builder-columns-row skt-builder-columns-row-2column">
+				{{#if blockSwitchPosition}}
+					<div class="skt-builder-column">
+						{{#if blockImage}}
+							<div class="skt-builder-column-inner"><img class="skt-builder-home-section1-block-img" style="margin-top: {{blockImagePosition}}px;" src="{{blockImage}}"></div>
+						{{/if}}
+					</div>
+					<div class="skt-builder-column">
+						{{#if blockTitle}}
+							<div class="skt-builder-block-title" style="text-align: {{blockTitleAlign}};">
+                                <h2 style="color: {{blockTitleColor}}; font-size: {{blockTitleFontSize}}px; {{#if blockTitleSeparator}}margin-bottom: 0;{{else}}margin-bottom: {{blockTitleMarginBottom}}px;{{/if}} text-align: {{blockTitleAlign}};"><small style="color:{{blockTitleSmallColor}}; font-size:{{blockTitleSmallFontSize}}px; margin-bottom:{{blockTitleSmallMarginBottom}}px;">{{blockTitleSmall}}</small>{{blockTitle}}</h2>
+                                {{#if blockTitleSeparator}}
+                                	<div class="skt-builder-block-title-separator" style="background-color: {{blockTitleSeparatorColor}}; margin-bottom: {{blockTitleMarginBottom}}px;"></div>
+                                {{/if}}
+                            </div>
+						{{/if}}
+
+						<div class="skt-builder-column-inner">
+                        	{{#if blockDescription}}
+                            	<div class="skt-builder-block-description">{{{blockDescription}}}</div>
+                            {{/if}}
+                            	
+                           {{#if blockColumns.length}}
+                           	{{#each_with_sort blockColumns "order"}}
+                            	<div class="skt-builder-features-list">
+                                	<span class="{{blockColumnIcon}}" style="color:{{blockColumnIconColor}};"></span>
+                                    <span style="color: {{titleColor}};">{{title}}</span>
+                                </div>
+                            {{/each_with_sort}}
+                           {{/if}}
+                                
+                            <a class="skt-builder-block-button" href="{{blockButtonLink}}" {{#if blockButtonLinkTarget}}target="_blank"{{/if}}>{{blockButtonText}}</a>
+						</div>
+						
+					</div>
+				{{else}}
+                	<div class="skt-builder-column">
+						{{#if blockTitle}}
+							<div class="skt-builder-block-title" style="text-align: {{blockTitleAlign}};">
+                                <h2 style="color: {{blockTitleColor}}; font-size: {{blockTitleFontSize}}px; {{#if blockTitleSeparator}}margin-bottom: 0;{{else}}margin-bottom: {{blockTitleMarginBottom}}px;{{/if}} text-align: {{blockTitleAlign}};"><small style="color:{{blockTitleSmallColor}}; font-size:{{blockTitleSmallFontSize}}px; margin-bottom:{{blockTitleSmallMarginBottom}}px;">{{blockTitleSmall}}</small>{{blockTitle}}</h2>
+                                {{#if blockTitleSeparator}}
+                                	<div class="skt-builder-block-title-separator" style="background-color: {{blockTitleSeparatorColor}}; margin-bottom: {{blockTitleMarginBottom}}px;"></div>
+                                {{/if}}
+                            </div>
+						{{/if}}
+
+						<div class="skt-builder-column-inner">
+                        	{{#if blockDescription}}
+                            	<div class="skt-builder-block-description">{{{blockDescription}}}</div>
+                            {{/if}}
+                            	
+                           {{#if blockColumns.length}}
+                           	{{#each_with_sort blockColumns "order"}}
+                            	<div class="skt-builder-features-list">
+                                	<span class="{{blockColumnIcon}}" style="color:{{blockColumnIconColor}};"></span>
+                                    <span style="color: {{titleColor}};">{{title}}</span>
+                                </div>
+                            {{/each_with_sort}}
+                           {{/if}}
+                                
+                            <a class="skt-builder-block-button" href="{{blockButtonLink}}" {{#if blockButtonLinkTarget}}target="_blank"{{/if}}>{{blockButtonText}}</a>
+						</div>
+						
+					</div>
+					<div class="skt-builder-column">
+						{{#if blockImage}}
+							<div class="skt-builder-column-inner"><img class="skt-builder-home-section1-block-img" style="margin-top: {{blockImagePosition}}px;" src="{{blockImage}}"></div>
+						{{/if}}
+					</div>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+</div>
+{{#if blockAnimation}}
+<script>
+jQuery.noConflict();
+jQuery(document).ready(function(){
+jQuery(window).scroll(function(){
+    // This is then function used to detect if the element is scrolled into view
+    function elementScrolled(elem)
+    {
+        var docViewTop = jQuery(window).scrollTop();
+        var docViewBottom = docViewTop + jQuery(window).height();
+        var elemTop = jQuery(elem).offset().top;
+        return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+    }
+
+	if (jQuery('.skt-builder-block-inner-{{id}}').length > 0) {
+	if(elementScrolled('.skt-builder-block-inner-{{id}}')) {
+        var els = jQuery('.skt-builder-block-inner-{{id}}'),
+            i = 0,
+            f = function () {
+                jQuery(els[i++]).addClass('{{blockAnimationEffect}}');
+                if(i < els.length) setTimeout(f, 400);
+            };
+        f();
+    }}
+
+});
+});
+</script>
+{{/if}}

@@ -1,0 +1,301 @@
+{
+    "name": "Home Section 3",
+    "groups": "home-sections",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "blockTitleSmall",
+        "label": "Title Small",
+        "type": "text"
+    }, {
+		"name": "blockTitleSmallColor",
+		"label": "Title Small Color",
+		"type": "colorpicker",
+		"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockTitleSmallFontSize",
+        "label": "Title Small Font Size",
+        "type": "slider",
+    	"min": "0",
+    	"max": "150"
+    }, {
+        "name": "blockTitleSmallMarginBottom",
+        "label": "Title Small Margin Bottom",
+        "type": "slider",
+    	"min": "0",
+    	"max": "200"
+    }, {
+        "name": "blockTitle",
+        "label": "Title",
+        "type": "text"
+    }, {
+		"name": "blockTitleColor",
+		"label": "Title Color",
+		"type": "colorpicker",
+		"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockTitleFontSize",
+        "label": "Title Font Size",
+        "type": "slider",
+    	"min": "0",
+    	"max": "150"
+    }, {
+        "name": "blockTitleMarginBottom",
+        "label": "Title Margin Bottom",
+        "type": "slider",
+    	"min": "0",
+    	"max": "200"
+    }, {
+        "name": "blockTitleSeparator",
+        "label": "Title Separator",
+        "type": "checkbox_switch"
+    }, {
+		"name": "blockTitleSeparatorColor",
+		"label": "Title Separator Color",
+		"type": "colorpicker",
+		"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockTitleAlign",
+        "label": "Title Alignment",
+        "type": "select",
+        "default": "left",
+        "options": [{
+            "id": "left",
+            "val": "Left"
+        }, {
+            "id": "center",
+            "val": "Center"
+        }, {
+            "id": "right",
+            "val": "Right"
+        }, {
+            "id": "justify",
+            "val": "Justify"
+        }]
+    }, {
+        "name": "blockDescription",
+        "label": "Description",
+        "type": "textarea"
+    }, {
+        "name": "blockColumnsCount",
+        "label": "Number of columns in a row?",
+        "type": "slider",
+    	"min": "1",
+    	"max": "6"
+    }, {
+        "name": "blockColumns",
+        "label": "Columns",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text"
+        }, {
+			"name": "titleColor",
+			"label": "Title Color",
+			"type": "colorpicker",
+			"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+			"name": "titleHoverColor",
+			"label": "Title Hover Color",
+			"type": "colorpicker",
+			"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+            "name": "blockColumnsDescription",
+            "label": "Content",
+            "type": "textarea"
+        }, {
+			"name": "columnLink",
+			"label": "Link",
+			"type": "text"
+		}, {
+			"name": "columnLinkTarget",
+			"label": "Open button link in new tab?",
+			"type": "checkbox_switch"
+		}, {
+            "name": "columnIcon",
+            "label": "Icon",
+            "type": "image"
+        }]
+    }, {
+        "name": "blockAnimation",
+        "label": "Enable Animation",
+        "type": "checkbox_switch"
+    }, {
+        "name": "blockAnimationEffect",
+        "label": "Animation Effect",
+        "type": "select",
+        "default": "fadeIn",
+        "options": [{"id": "fadeIn", "val": "fadeIn"}, {"id": "fadeInUp", "val": "fadeInUp"}, {"id": "fadeInDown", "val": "fadeInDown"}, {"id": "fadeInLeft", "val": "fadeInLeft"}, {"id": "fadeInRight", "val": "fadeInRight"}, {"id": "fadeInUpBig", "val": "fadeInUpBig"}, {"id": "fadeInDownBig", "val": "fadeInDownBig"}, {"id": "fadeInLeftBig", "val": "fadeInLeftBig"}, {"id": "fadeInRightBig", "val": "fadeInRightBig"}, {"id": "fadeOut", "val": "fadeOut"}, {"id": "fadeOutUp", "val": "fadeOutUp"}, {"id": "fadeOutDown", "val": "fadeOutDown"}, {"id": "fadeOutLeft", "val": "fadeOutLeft"}, {"id": "fadeOutRight", "val": "fadeOutRight"}, {"id": "fadeOutUpBig", "val": "fadeOutUpBig"}, {"id": "fadeOutDownBig", "val": "fadeOutDownBig"}, {"id": "fadeOutLeftBig", "val": "fadeOutLeftBig"}, {"id": "fadeOutRightBig", "val": "fadeOutRightBig"}, {"id": "zoomIn", "val": "zoomIn"}, {"id": "zoomInUp", "val": "zoomInUp"}, {"id": "zoomInDown", "val": "zoomInDown"}, {"id": "zoomInLeft", "val": "zoomInLeft"}, {"id": "zoomInRight", "val": "zoomInRight"}, {"id": "slideInUp", "val": "slideInUp"}, {"id": "slideInDown", "val": "slideInDown"}, {"id": "slideInLeft", "val": "slideInLeft"}, {"id": "slideInRight", "val": "slideInRight"}, {"id": "slideOutUp", "val": "slideOutUp"}, {"id": "slideOutDown", "val": "slideOutDown"}, {"id": "slideOutLeft", "val": "slideOutLeft"}, {"id": "slideOutRight", "val": "slideOutRight"}, {"id": "flip", "val": "flip"}, {"id": "flipInX", "val": "flipInX"}, {"id": "flipInY", "val": "flipInY"}, {"id": "flipOutX", "val": "flipOutX"}, {"id": "flipOutY", "val": "flipOutY"}, {"id": "rotateIn", "val": "rotateIn"}, {"id": "rotateInUpLeft", "val": "rotateInUpLeft"}, {"id": "rotateInUpRight", "val": "rotateInUpRight"}, {"id": "rotateInDownLeft", "val": "rotateInDownLeft"}, {"id": "rotateInDownRight", "val": "rotateInDownRight"}, {"id": "rotateOut", "val": "rotateOut"}, {"id": "rotateOutUpLeft", "val": "rotateOutUpLeft"}, {"id": "rotateOutUpRight", "val": "rotateOutUpRight"}, {"id": "rotateOutDownLeft","val": "rotateOutDownLeft"}, {"id": "rotateOutDownRight", "val": "rotateOutDownRight"}, {"id": "bounce", "val": "bounce"}, {"id": "bounceIn", "val": "bounceIn"}, {"id": "bounceInUp", "val": "bounceInUp"}, {"id": "bounceInDown", "val": "bounceInDown"}, {"id": "bounceInLeft", "val": "bounceInLeft"}, {"id": "bounceInRight", "val": "bounceInRight"}, {"id": "bounceOut", "val": "bounceOut"}, {"id": "bounceOutUp", "val": "bounceOutUp"}, {"id": "bounceOutDown", "val": "bounceOutDown"}, {"id": "bounceOutLeft", "val": "bounceOutLeft"}, {"id": "bounceOutRight", "val": "bounceOutRight"}, {"id": "rollIn", "val": "rollIn"}, {"id": "rollOut", "val": "rollOut"}, {"id": "lightSpeedIn", "val": "lightSpeedIn"}, {"id": "lightSpeedOut", "val": "lightSpeedOut"}, {"id": "flash", "val": "flash"}, {"id": "pulse", "val": "pulse"}, {"id": "shake", "val": "shake"}, {"id": "swing", "val": "swing"}, {"id": "tada", "val": "tada"}, {"id": "wobble", "val": "wobble"}]
+    }, {
+        "name": "blockPaddingTop",
+        "label": "Padding Top",
+        "type": "slider",
+    	"min": "0",
+    	"max": "300"
+    }, {
+        "name": "blockPaddingBottom",
+        "label": "Padding Bottom",
+        "type": "slider",
+    	"min": "0",
+    	"max": "300"
+    }, {
+    	"name": "blockBackgroundColor",
+    	"label": "Background Color",
+    	"type": "colorpicker",
+    	"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockShowWave",
+        "label": "Show Wave",
+        "type": "checkbox_switch"
+    }, {
+        "name": "blockParallaxEffect",
+        "label": "Parallax Effect",
+        "type": "checkbox_switch"
+    }, {
+        "name": "blockBgImageUrl",
+        "label": "Background Image",
+        "type": "image"
+    }],
+	"assets": [{
+        "type": "image",
+        "src": "%block_url%/assets/img/service-icon1.png",
+        "tags": ["services", "icon"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-icon2.png",
+        "tags": ["services", "icon"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-icon3.png",
+        "tags": ["services", "icon"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-icon4.png",
+        "tags": ["services", "icon"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-icon5.png",
+        "tags": ["services", "icon"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-icon6.png",
+        "tags": ["services", "icon"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-icon7.png",
+        "tags": ["services", "icon"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-icon8.png",
+        "tags": ["services", "icon"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-icon9.png",
+        "tags": ["services", "icon"]
+    }],
+    "defaults": {
+        "blockTitleSmall": "WHAT WE DO",
+		"blockTitleSmallColor": "#4208bc",
+		"blockTitleSmallFontSize": "14",
+		"blockTitleSmallMarginBottom": "10",
+		"blockTitle": "Our Services",
+		"blockTitleColor": "#282828",
+		"blockTitleFontSize": "40",
+		"blockTitleMarginBottom": "70",
+		"blockTitleSeparator": 0,
+		"blockTitleSeparatorColor": "#685031",
+		"blockTitleAlign": "center",
+        "blockDescription": "",
+		"blockAnimation" : 0,
+		"blockAnimationEffect" : "fadeIn",
+		"blockPaddingTop" : "40",
+		"blockPaddingBottom" : "160",
+		"blockBackgroundColor": "#ffffff",
+		"blockShowWave" : 1,
+		"blockParallaxEffect" : 0,
+		"blockBgImageUrl": "",
+		"blockColumnsCount" : "3",
+		"blockColumns": [{
+			"title": "Financial Analysis",
+			"titleColor": "#282828",
+			"titleHoverColor": "#4208bc",
+            "blockColumnsDescription": "<p><span style='color: #7d7c7c'>Aenean vulputate eleifend tellus. Aenean leo ligula, por consequat vitae, eleifend ac, enim.</p>",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-icon1.png",
+            "order": 1
+        }, {
+			"title": "Business Growth",
+			"titleColor": "#282828",
+			"titleHoverColor": "#4208bc",
+            "blockColumnsDescription": "<p><span style='color: #7d7c7c'>Aenean vulputate eleifend tellus. Aenean leo ligula, por consequat vitae, eleifend ac, enim.</p>",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-icon2.png",
+            "order": 2
+        }, {
+			"title": "Success Report",
+			"titleColor": "#282828",
+			"titleHoverColor": "#4208bc",
+            "blockColumnsDescription": "<p><span style='color: #7d7c7c'>Aenean vulputate eleifend tellus. Aenean leo ligula, por consequat vitae, eleifend ac, enim.</p>",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-icon3.png",
+            "order": 3
+        }, {
+			"title": "Digital Product",
+			"titleColor": "#282828",
+			"titleHoverColor": "#4208bc",
+            "blockColumnsDescription": "<p><span style='color: #7d7c7c'>Aenean vulputate eleifend tellus. Aenean leo ligula, por consequat vitae, eleifend ac, enim.</p>",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-icon4.png",
+            "order": 4
+        }, {
+			"title": "Marketing Plan",
+			"titleColor": "#282828",
+			"titleHoverColor": "#4208bc",
+            "blockColumnsDescription": "<p><span style='color: #7d7c7c'>Aenean vulputate eleifend tellus. Aenean leo ligula, por consequat vitae, eleifend ac, enim.</p>",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-icon5.png",
+            "order": 5
+        }, {
+			"title": "Strategy Planning",
+			"titleColor": "#282828",
+			"titleHoverColor": "#4208bc",
+            "blockColumnsDescription": "<p><span style='color: #7d7c7c'>Aenean vulputate eleifend tellus. Aenean leo ligula, por consequat vitae, eleifend ac, enim.</p>",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-icon6.png",
+            "order": 6
+        }, {
+			"title": "Architecture Plan",
+			"titleColor": "#282828",
+			"titleHoverColor": "#4208bc",
+            "blockColumnsDescription": "<p><span style='color: #7d7c7c'>Aenean vulputate eleifend tellus. Aenean leo ligula, por consequat vitae, eleifend ac, enim.</p>",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-icon7.png",
+            "order": 7
+        }, {
+			"title": "Global Business",
+			"titleColor": "#282828",
+			"titleHoverColor": "#4208bc",
+            "blockColumnsDescription": "<p><span style='color: #7d7c7c'>Aenean vulputate eleifend tellus. Aenean leo ligula, por consequat vitae, eleifend ac, enim.</p>",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-icon8.png",
+            "order": 8
+        }, {
+			"title": "Risk Management",
+			"titleColor": "#282828",
+			"titleHoverColor": "#4208bc",
+            "blockColumnsDescription": "<p><span style='color: #7d7c7c'>Aenean vulputate eleifend tellus. Aenean leo ligula, por consequat vitae, eleifend ac, enim.</p>",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-icon9.png",
+            "order": 9
+        }]
+    }
+}
